@@ -17,7 +17,6 @@ vim.api.nvim_set_keymap("n", "<C-d>", "<C-d>:normal! zz<CR>", { noremap = true, 
 vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>:normal! zz<CR>", { noremap = true, silent = true })
 
 --yanking outside of neovim
-vim.api.nvim_set_keymap("n", "y", [[:'<,'>w !xclip -selection clipboard<CR>y]], { noremap = true })
 vim.api.nvim_set_keymap("n", "yy", [[:'<,'>w !xclip -selection clipboard<CR>yy]], { noremap = true })
 
 -- Keybinds for Trouble
